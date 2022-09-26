@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*border: 1px solid red;*/
+}
+
+:root {
+    --title-size: 2rem;
+    --font-ibm: 'IBM Plex Mono', monospace;
+    --font-poppins: 'Poppins', sans-serif;
+    --title-font-weight: 600;
+}
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-family: var(--font-ibm);
+}
+
+nav {
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 9rem;
+}
+
+header h2 {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+header h1 {
+    font-family: var(--font-poppins);
+    font-size: 3.5rem;
+
+}
+
+header p {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+}
+
+article {
+    margin: 3rem 0 3rem 0;
+    width: 100%;
+}
+
+article .working {
+    margin: 10rem 0 0 0;
+    text-align: center;
+    font-size: var(--title-size);
+}
+
+.profile {
+    position: fixed;
+    bottom: 0;
+    width: 800px;
+    margin-bottom: 4rem;
+}
+
+.profile h2 {
+    border-bottom: 1px dotted black;
+    margin: 1rem 0 1rem 0;
+    font-family: var(--font-poppins);
+    font-weight: var(--title-font-weight);
+    font-size: 2rem;
+}
+
+.profile a {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-right: 1.5rem;
+}
+
+.profile a:hover {
+    color: red;
+}
+
+@media only screen and (max-device-width: 900px){
+    .profile h1 {
+        font-size: 3rem;
+    }
+    .profile a {
+        font-size: 2rem;
+    }
+}
